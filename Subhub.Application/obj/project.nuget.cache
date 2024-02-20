@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "+/Tib1SYW4RBrarHlLkTlrYxKmcP79tlGxx7PEnWJeq2n9riI29w3mN96GlniYocKlzezaEO9GQ5C2tN58jG6Q==",
+  "success": true,
+  "projectFilePath": "/Users/karol/capstone-subhub/Subhub.Application/Subhub.Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/karol/.nuget/packages/mediatr/12.2.0/mediatr.12.2.0.nupkg.sha512",
+    "/Users/karol/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/karol/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "9qPZQrd8ji51yr6xozfEfeEmVZ78NQaGuDLmpuKCMqphEAQnjcIwocJYE+HD4gNZc8m60Hxt/OYWAKCpgNnujw==",
+  "dgSpecHash": "eKp94WFkNk2XGjAxwdty0fN3EU+CO7nnGlx3tE+cA3LhqjQlTMkEPrKhuK3DfcolneshDE3iH9mLg4LAfhnfUg==",
   "success": true,
   "projectFilePath": "/Users/karol/capstone-subhub/Subhub.Presentation/Subhub.Presentation.csproj",
   "expectedPackageFiles": [
     "/Users/karol/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/Users/karol/.nuget/packages/mapster/7.4.0/mapster.7.4.0.nupkg.sha512",
+    "/Users/karol/.nuget/packages/mapster.core/1.2.1/mapster.core.1.2.1.nupkg.sha512",
+    "/Users/karol/.nuget/packages/mapster.dependencyinjection/1.0.1/mapster.dependencyinjection.1.0.1.nupkg.sha512",
     "/Users/karol/.nuget/packages/mediatr/12.2.0/mediatr.12.2.0.nupkg.sha512",
     "/Users/karol/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/Users/karol/.nuget/packages/microsoft.aspnetcore.openapi/8.0.2/microsoft.aspnetcore.openapi.8.0.2.nupkg.sha512",

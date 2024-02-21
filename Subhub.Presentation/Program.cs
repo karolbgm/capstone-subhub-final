@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Subhub.Application;
 using Subhub.Infrastructure;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<SubscriptionsDbContext>(optionsAction => {
     optionsAction.UseSqlite(builder.Configuration.GetConnectionString(name:"DbConnectionString"));
 });
+
+builder.Services.AddApplication();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

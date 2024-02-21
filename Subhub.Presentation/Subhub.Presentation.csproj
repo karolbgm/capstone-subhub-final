@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Subhub.Infrastructure\Subhub.Infrastructure.csproj" />
+    <ProjectReference Include="..\Subhub.Application\Subhub.Application.csproj" />
   </ItemGroup>
 
 </Project>

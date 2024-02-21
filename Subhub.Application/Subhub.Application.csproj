@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Mapster" Version="7.4.0" />
+    <PackageReference Include="Mapster.DependencyInjection" Version="1.0.1" />
     <PackageReference Include="MediatR" Version="12.2.0" />
     <PackageReference Include="MediatR.Contracts" Version="2.0.1" />
   </ItemGroup>
@@ -18,6 +20,11 @@
     <Folder Include="Commands/Subscriptions/DeleteSubscription/" />
     <Folder Include="Commands/Subscriptions/UpdateSubscription/" />
     <Folder Include="Queries/Subscriptions/GetSubscriptionById/" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Subhub.Contracts\Subhub.Contracts.csproj" />
+    <ProjectReference Include="..\Subhub.Infrastructure\Subhub.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

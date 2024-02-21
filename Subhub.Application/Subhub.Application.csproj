@@ -14,9 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Commands/" />
-    <Folder Include="Commands/Subscriptions/" />
-    <Folder Include="Commands/Subscriptions/CreateSubscription/" />
     <Folder Include="Commands/Subscriptions/DeleteSubscription/" />
     <Folder Include="Commands/Subscriptions/UpdateSubscription/" />
   </ItemGroup>

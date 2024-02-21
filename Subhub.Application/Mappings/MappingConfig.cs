@@ -10,6 +10,9 @@ public class MappingConfig
     {
         TypeAdapterConfig<List<Subscription>, GetSubsResponse>.NewConfig()
             .Map(dest => dest.SubscriptionsDtos, src => src);
+
+        TypeAdapterConfig<Subscription, GetSubByIdResponse>.NewConfig()
+            .Map(dest => dest.SubscriptionDto, src => src);
     }
 }
 

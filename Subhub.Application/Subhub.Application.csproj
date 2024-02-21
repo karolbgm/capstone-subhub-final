@@ -19,7 +19,6 @@
     <Folder Include="Commands/Subscriptions/CreateSubscription/" />
     <Folder Include="Commands/Subscriptions/DeleteSubscription/" />
     <Folder Include="Commands/Subscriptions/UpdateSubscription/" />
-    <Folder Include="Queries/Subscriptions/GetSubscriptionById/" />
   </ItemGroup>
 
   <ItemGroup>

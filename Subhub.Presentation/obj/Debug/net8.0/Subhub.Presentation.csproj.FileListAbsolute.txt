@@ -154,3 +154,4 @@
 /Users/karol/capstone-subhub/Subhub.Presentation/bin/Debug/net8.0/Subhub.Contracts.pdb
 /Users/karol/capstone-subhub/Subhub.Presentation/bin/Debug/net8.0/FluentValidation.dll
 /Users/karol/capstone-subhub/Subhub.Presentation/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/karol/capstone-subhub/Subhub.Presentation/obj/Debug/net8.0/Subhub.Presentation.sourcelink.json

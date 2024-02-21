@@ -17,3 +17,4 @@
 /Users/karol/capstone-subhub/Subhub.Application/obj/Debug/net8.0/refint/Subhub.Application.dll
 /Users/karol/capstone-subhub/Subhub.Application/obj/Debug/net8.0/Subhub.Application.pdb
 /Users/karol/capstone-subhub/Subhub.Application/obj/Debug/net8.0/ref/Subhub.Application.dll
+/Users/karol/capstone-subhub/Subhub.Application/obj/Debug/net8.0/Subhub.Application.sourcelink.json

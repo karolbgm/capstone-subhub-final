@@ -1,7 +1,9 @@
 ﻿using Mapster;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Subhub.Contracts.Exceptions;
 using Subhub.Contracts.Responses;
+using Subhub.Domain.Entities;
 using Subhub.Infrastructure;
 
 namespace Subhub.Application.Queries.Subscriptions.GetSubscriptionById;
@@ -19,7 +21,7 @@ public class GetSubByIdQueryHandler : IRequestHandler<GetSubByIdQuery, GetSubByI
 
         if (subscription is null)
         {
-            throw new Exception();
+            throw new NotFoundException($"{nameof(Subscription)} with {nameof(Subscription.Id)} : {request.Id}" + $"was not found");
         }
         return subscription.Adapt<GetSubByIdResponse>();
     }

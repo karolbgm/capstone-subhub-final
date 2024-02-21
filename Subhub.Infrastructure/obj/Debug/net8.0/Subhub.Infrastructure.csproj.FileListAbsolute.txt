@@ -15,3 +15,4 @@
 /Users/karol/capstone-subhub/Subhub.Infrastructure/obj/Debug/net8.0/Subhub.Infrastructure.pdb
 /Users/karol/capstone-subhub/Subhub.Infrastructure/obj/Debug/net8.0/Subhub.Infrastructure.genruntimeconfig.cache
 /Users/karol/capstone-subhub/Subhub.Infrastructure/obj/Debug/net8.0/ref/Subhub.Infrastructure.dll
+/Users/karol/capstone-subhub/Subhub.Infrastructure/obj/Debug/net8.0/Subhub.Infrastructure.sourcelink.json

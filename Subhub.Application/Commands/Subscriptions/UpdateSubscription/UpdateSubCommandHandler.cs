@@ -1,6 +1,8 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Subhub.Infrastructure;
+using Subhub.Contracts.Exceptions;
+using Subhub.Domain.Entities;
 namespace Subhub.Application.Commands.Subscriptions.UpdateSubscription;
 
 public class UpdateSubCommandHandler : IRequestHandler<UpdateSubCommand, Unit>
@@ -17,7 +19,7 @@ public class UpdateSubCommandHandler : IRequestHandler<UpdateSubCommand, Unit>
 
         if (subscriptionToUpdate is null)
         {
-            throw new Exception();
+            throw new NotFoundException($"{nameof(Subscription)} with {nameof(Subscription.Id)} : {request.Id}" + $"was not found");
         }
 
         subscriptionToUpdate.Name = request.Name;

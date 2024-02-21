@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Movies.Presentation.Handlers;
 using Subhub.Application;
 using Subhub.Infrastructure;
 using Subhub.Presentation.Modules;
@@ -14,6 +15,8 @@ builder.Services.AddDbContext<SubscriptionsDbContext>(optionsAction => {
 
 builder.Services.AddApplication();
 
+builder.Services.AddExceptionHandler<ExceptionHandler>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -23,6 +26,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseExceptionHandler(_ => { });
 app.UseHttpsRedirection();
 app.AddSubscriptionsEndpoints();
 app.Run();

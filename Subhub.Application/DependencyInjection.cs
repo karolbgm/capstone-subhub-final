@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using FluentValidation;
 using Mapster;
 using Microsoft.Extensions.DependencyInjection;
 using Subhub.Application.Mappings;
@@ -13,11 +14,13 @@ public static class DependencyInjection
         {
             cf.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
         });
-        
+
         MappingConfig.Configure();
         var config = TypeAdapterConfig.GlobalSettings;
         config.Scan(Assembly.GetExecutingAssembly());
         services.AddSingleton(config);
+
+        services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
         return services;
     }

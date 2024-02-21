@@ -2,6 +2,7 @@
 using FluentValidation;
 using Mapster;
 using Microsoft.Extensions.DependencyInjection;
+using Subhub.Application.Behaviors;
 using Subhub.Application.Mappings;
 
 namespace Subhub.Application;
@@ -13,6 +14,8 @@ public static class DependencyInjection
         services.AddMediatR(cf =>
         {
             cf.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
+
+            cf.AddOpenBehavior(typeof(ValidationBehavior<,>));
         });
 
         MappingConfig.Configure();

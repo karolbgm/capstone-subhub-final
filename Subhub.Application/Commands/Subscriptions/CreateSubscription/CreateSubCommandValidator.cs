@@ -12,6 +12,7 @@ public class CreateSubCommandValidator : AbstractValidator<CreateSubCommand>
     {
         RuleFor(x => x.Name)
         .NotEmpty()
+        .WithMessage($"{nameof(Subscription.Name)} can't be empty")
         .MaximumLength(30)
         .WithMessage($"{nameof(Subscription.Name)} can't be longer than 30 characters");
 

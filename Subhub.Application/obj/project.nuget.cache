@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6zSdr1XsPfBDVGRubvMc6N1QdH8Y7+kDdsNgs0Vic4TeFPP2/lZe4f+zVOB5yfUJpY1K2F30s/L5IY8U88CCJg==",
+  "dgSpecHash": "2Lcf9DtOn8ugvBg2C/D5YbkiZfIoPRvIklCMnfzfjqg4OQuaH8Wgb0RGAQLJTaV6qd+cyvzYyErXWxyc9IjaMg==",
   "success": true,
   "projectFilePath": "/Users/karol/capstone-subhub/Subhub.Application/Subhub.Application.csproj",
   "expectedPackageFiles": [
+    "/Users/karol/.nuget/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512",
+    "/Users/karol/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.9.0/fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
     "/Users/karol/.nuget/packages/mapster/7.4.0/mapster.7.4.0.nupkg.sha512",
     "/Users/karol/.nuget/packages/mapster.core/1.2.1/mapster.core.1.2.1.nupkg.sha512",
     "/Users/karol/.nuget/packages/mapster.dependencyinjection/1.0.1/mapster.dependencyinjection.1.0.1.nupkg.sha512",

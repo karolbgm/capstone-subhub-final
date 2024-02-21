@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Subhub.Contracts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc9f8d1d6012a30b44052937f1923325110dda67")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9a1b9360df700e7bc18fee4a2b21b21fd14c800")]
 [assembly: System.Reflection.AssemblyProductAttribute("Subhub.Contracts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Subhub.Contracts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

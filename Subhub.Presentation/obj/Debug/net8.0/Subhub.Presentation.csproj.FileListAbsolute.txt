@@ -143,3 +143,12 @@
 /Users/karol/capstone-subhub/Subhub.Presentation/obj/Debug/net8.0/Subhub.Presentation.pdb
 /Users/karol/capstone-subhub/Subhub.Presentation/obj/Debug/net8.0/Subhub.Presentation.genruntimeconfig.cache
 /Users/karol/capstone-subhub/Subhub.Presentation/obj/Debug/net8.0/ref/Subhub.Presentation.dll
+/Users/karol/capstone-subhub/Subhub.Presentation/bin/Debug/net8.0/Mapster.dll
+/Users/karol/capstone-subhub/Subhub.Presentation/bin/Debug/net8.0/Mapster.Core.dll
+/Users/karol/capstone-subhub/Subhub.Presentation/bin/Debug/net8.0/Mapster.DependencyInjection.dll
+/Users/karol/capstone-subhub/Subhub.Presentation/bin/Debug/net8.0/MediatR.dll
+/Users/karol/capstone-subhub/Subhub.Presentation/bin/Debug/net8.0/MediatR.Contracts.dll
+/Users/karol/capstone-subhub/Subhub.Presentation/bin/Debug/net8.0/Subhub.Application.dll
+/Users/karol/capstone-subhub/Subhub.Presentation/bin/Debug/net8.0/Subhub.Contracts.dll
+/Users/karol/capstone-subhub/Subhub.Presentation/bin/Debug/net8.0/Subhub.Application.pdb
+/Users/karol/capstone-subhub/Subhub.Presentation/bin/Debug/net8.0/Subhub.Contracts.pdb

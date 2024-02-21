@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Subhub.Application;
 using Subhub.Infrastructure;
+using Subhub.Presentation.Modules;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -23,4 +24,5 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.AddSubscriptionsEndpoints();
 app.Run();

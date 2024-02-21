@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Mapster;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Subhub.Contracts.Responses;
 using Subhub.Infrastructure;
@@ -16,6 +17,7 @@ public class GetSubsQueryHandler : IRequestHandler<GetSubsQuery, GetSubsResponse
     {
         var subscriptions = await _subscriptionsDbContext.Subscriptions.ToListAsync(cancellationToken);
        
+       return subscriptions.Adapt<GetSubsResponse>();
     }
     
 

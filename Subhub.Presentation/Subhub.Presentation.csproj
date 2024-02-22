@@ -23,4 +23,12 @@
     <ProjectReference Include="..\Subhub.Application\Subhub.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Client/" />
+    <Folder Include="Client/subscriptions/public/" />
+    <Folder Include="Client/subscriptions/src/assets/" />
+    <Folder Include="Client/subscriptions/src/components/" />
+    <Folder Include="Client/subscriptions/src/components/subscriptions/" />
+  </ItemGroup>
+
 </Project>

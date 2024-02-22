@@ -155,3 +155,7 @@
 /Users/karol/capstone-subhub/Subhub.Presentation/bin/Debug/net8.0/FluentValidation.dll
 /Users/karol/capstone-subhub/Subhub.Presentation/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
 /Users/karol/capstone-subhub/Subhub.Presentation/obj/Debug/net8.0/Subhub.Presentation.sourcelink.json
+/Users/karol/capstone-subhub/Subhub.Presentation/bin/Debug/net8.0/Client/subscriptions/package-lock.json
+/Users/karol/capstone-subhub/Subhub.Presentation/bin/Debug/net8.0/Client/subscriptions/package.json
+/Users/karol/capstone-subhub/Subhub.Presentation/bin/Debug/net8.0/Client/subscriptions/tsconfig.json
+/Users/karol/capstone-subhub/Subhub.Presentation/bin/Debug/net8.0/Client/subscriptions/tsconfig.node.json

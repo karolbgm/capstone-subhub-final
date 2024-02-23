@@ -4,7 +4,7 @@ export interface SubDto {
     category: string,
     type: string,
     cost: number,
-    paymentDate: Date,
+    paymentDate: string | undefined,
     period: number,
     isActive: boolean,
     createDate: string | undefined

@@ -9,12 +9,13 @@ const apiConnector = {
     
     getSubscriptions: async (): Promise<SubDto[]> => {
         try {
-            const response: AxiosResponse<GetSubsResponse> = 
-                await axios.get(`${API_BASE_URL}/subscriptions`);
-            const subscriptions = response.data.subDtos.map(subscription => ({
+            const response: AxiosResponse<GetSubsResponse> = await axios.get(`${API_BASE_URL}/subscriptions`);
+            const subscriptions = response.data.subscriptionsDtos.map(subscription => ({
                 ...subscription,
-                createDate: subscription.createDate?.slice(0,10) ?? ""
+                paymentDate: subscription.paymentDate?.slice(0,10) ?? ""
             }));
+            // console.log(response.data.subscriptionsDtos)
+            // return;
             return subscriptions;
         } catch (error) {
             console.log('No movies found:', error);

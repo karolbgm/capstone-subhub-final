@@ -13,6 +13,11 @@ builder.Services.AddDbContext<SubscriptionsDbContext>(optionsAction => {
     optionsAction.UseSqlite(builder.Configuration.GetConnectionString(name:"DbConnectionString"));
 });
 
+builder.Services.AddCors(opt => {
+    opt.AddPolicy("CorsPolicy", policyBuilder => {
+        policyBuilder.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:5173");
+    });
+});
 builder.Services.AddApplication();
 
 builder.Services.AddExceptionHandler<ExceptionHandler>();
@@ -27,6 +32,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseExceptionHandler(_ => { });
+app.UseCors("CorsPolicy");
 app.UseHttpsRedirection();
 app.AddSubscriptionsEndpoints();
 app.Run();

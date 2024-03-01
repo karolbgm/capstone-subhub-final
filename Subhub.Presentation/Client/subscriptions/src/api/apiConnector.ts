@@ -34,7 +34,7 @@ const apiConnector = {
 
     editSubscription: async (subscription: SubDto) : Promise<void>  => {
         try {
-            await axios.put<number>(`${API_BASE_URL}/subscriptions`, subscription);
+            await axios.put<number>(`${API_BASE_URL}/subscriptions/${subscription.id}`, subscription);
         } catch (error) {
             console.log(error);
             throw error;
@@ -50,11 +50,11 @@ const apiConnector = {
         }
     },
 
-    getSubscriptionById: async (subscriptionId: number) : Promise<SubDto | undefined> => {
+    getSubscriptionById: async (subscriptionId: string) : Promise<SubDto | undefined> => {
         
         try {
             const response = await axios.get<GetSubByIdResponse>(`${API_BASE_URL}/subscriptions/${subscriptionId}`);
-            return response.data.subDto;
+            return response.data.subscriptionDto;
         } catch (error) {
             console.log(error);
             throw error;

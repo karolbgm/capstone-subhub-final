@@ -1,55 +1,59 @@
-import { useEffect, useState } from "react"
-import { SubDto } from "../../models/subDto"
+import { useEffect, useState } from "react";
+import { SubDto } from "../../models/subDto";
 import apiConnector from "../../api/apiConnector";
-import Container from 'react-bootstrap/Container';
+import Container from "react-bootstrap/Container";
 import { Button, Table } from "react-bootstrap";
 import TableItem from "./TableItem";
 import { Link } from "react-router-dom";
 
 export default function SubhubTable() {
+  //import subscriptions from api call
+  const [subscriptions, setSubscriptions] = useState<SubDto[]>([]);
+  const [totalCost, setTotalCost] = useState<number>(0);
 
-    //import subscriptions from api call
-    const [subscriptions, setSubscriptions] = useState<SubDto[]>([]);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const fetchedSubscriptions = await apiConnector.getSubscriptions();
-            setSubscriptions(fetchedSubscriptions);
-        }
+  useEffect(() => {
+    const fetchData = async () => {
+      const fetchedSubscriptions = await apiConnector.getSubscriptions();
+      setSubscriptions(fetchedSubscriptions);
+      
 
-        fetchData();
-    }, []);
+       // Calculate total cost
+       const monthlySubscriptions = fetchedSubscriptions.filter(subscription => subscription.period === 1);
+       const total = monthlySubscriptions.reduce((acc, subscription) => acc + subscription.cost, 0);
+       setTotalCost(total);
+    
+    };
 
-    return (
-        <>
-        <Container>
-            <Table>
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Category</th>
-                        <th>Type</th>
-                        <th>Cost</th>
-                        <th>Status</th>
-                        <th>Period (Monthly)</th>
-                        <th>Payment Date</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {subscriptions.length !== 0 && (
-                        subscriptions.map((subscription, index) => (
-                            <TableItem key={index} subscription={subscription}/>
-                        ))
-                    )}
-                </tbody>
-            </Table>
-            <Link to="createSubscription">
-            <Button variant="primary">Add Subscription</Button>
-            </Link>
+    fetchData();
+  }, []);
 
-        </Container>
-        </>
-    )
+  return (
+    <>
+      {/* <Container> */}
+      <Link to="createSubscription">
+        <Button variant="dark" className="mt-5">
+          <i className="fa-solid fa-plus me-2"></i>New Subscription
+        </Button>
+      </Link>
+      <div className="album py-5">
+        <div className="container ms-5" style={{ maxWidth: "60vw" }}>
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            {subscriptions.length !== 0 &&
+              subscriptions.map((subscription, index) => (
+                <TableItem key={index} subscription={subscription} />
+              ))}
+          </div>
+        </div>
+      </div>
+      <div className="col-md-2">
+        <div className="card">
+            <h5>Recurring expenses</h5>
+        <hr />
+        <p>$ {totalCost.toFixed(2)} USD Monthly</p>
+        </div>
+      </div>
+      {/* </Container> */}
+    </>
+  );
 }

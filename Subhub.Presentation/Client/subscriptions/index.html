@@ -9,6 +9,8 @@
       integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script
       src="https://kit.fontawesome.com/c92409b11e.js"
       crossorigin="anonymous"
@@ -19,42 +21,49 @@
   <body>
     <div class="container-fluid">
       <div class="row flex-nowrap">
-        <div class="bg-dark col-auto col-md-2 min-vh-100 d-flex flex-column justify-content-between">
+        <div
+          class="bg-dark col-auto col-md-2 min-vh-100 d-flex flex-column justify-content-between"
+        >
           <div class="bg-dark p-2">
-            <a class="d-flex text-decoration-none mt-1 align-items-center text-white">
-              <i class="fa-solid fa-credit-card"></i> <span class="fs-4 d-none d-sm-inline ms-2">Subhub</span>
+            <a
+              class="d-flex text-decoration-none mt-1 align-items-center text-white"
+            >
+              <i class="fa-solid fa-credit-card"></i>
+              <span class="fs-4 d-none d-sm-inline ms-2">Subhub</span>
             </a>
-            <hr style="color: white;">
+            <hr style="color: white" />
             <ul class="nav nav-pills flex-column mt-4">
               <li class="nav-item py-2 py-sm-0">
-                <a href="#" class="nav-link text-white">
-                  <i class="fs-5 fas fa-tachometer-alt"></i><span class="fs-4 d-none ms-3 d-sm-inline">Dashboard</span>
+                <a href="/" class="nav-link text-white">
+                  <i class="fs-5 fas fa-tachometer-alt"></i
+                  ><span class="fs-4 d-none ms-3 d-sm-inline">Dashboard</span>
                 </a>
               </li>
               <li class="nav-item py-2 py-sm-0">
-                <a href="#" class="nav-link text-white">
-                  <i class="fs-5 fas fa-home"></i><span class="fs-4 d-none ms-3 d-sm-inline">Home</span>
-                </a>
-              </li>
-              <li class="nav-item py-2 py-sm-0">
-                <a href="#" class="nav-link text-white">
-                  <i class="fs-5 fas fa-list"></i><span class="fs-4 d-none ms-3 d-sm-inline">Subscriptions</span>
-                </a>
-              </li>
-              <li class="nav-item py-2 py-sm-0">
-                <a href="#" class="nav-link text-white">
-                  <i class="fs-5 fas fa-chart-pie"></i><span class="fs-4 d-none ms-3 d-sm-inline">Subscription Analysis</span>
+                <a href="/" class="nav-link text-white">
+                  <i class="fs-5 fas fa-home"></i
+                  ><span class="fs-4 d-none ms-3 d-sm-inline">Home</span>
                 </a>
               </li>
             </ul>
           </div>
           <div class="dropdown show p-3">
-            <button class="btn border-none dropdown-toggle text-white" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            <button
+              class="btn border-none dropdown-toggle text-white"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
               <i class="fas fa-user"></i><span class="ms-2">Karol</span>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><button class="dropdown-item" type="button">Settings</button></li>
-              <li><button class="dropdown-item" type="button">Profile</button></li>
+              <li>
+                <button class="dropdown-item" type="button">Settings</button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">Profile</button>
+              </li>
             </ul>
           </div>
         </div>
@@ -62,6 +71,7 @@
       </div>
     </div>
     <!-- Bootstrap 5 JavaScript bundle -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>

@@ -7,6 +7,8 @@ using Subhub.Application.Mappings;
 
 namespace Subhub.Application;
 
+//configuring and registering services that the application needs to work properly. 
+//It sets up things like handling requests, mapping data between different parts of the application, and validating data. 
 public static class DependencyInjection
 {
     public static IServiceCollection AddApplication(this IServiceCollection services)
@@ -28,3 +30,4 @@ public static class DependencyInjection
         return services;
     }
 }
+

@@ -11,6 +11,7 @@ public class DeleteSubCommandValidator : AbstractValidator<DeleteSubCommand>
         .WithMessage($"{nameof(Subscription.Id)} can't be empty");
     }
 }
+//id can't be empty
 
 
 

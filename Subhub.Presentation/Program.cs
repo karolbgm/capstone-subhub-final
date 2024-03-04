@@ -9,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+//REGISTER DBCONTEXT AS A SERVICE 
+//SETS UP THE CONNECTION TO THE SQLITE DATABASE using connection string
 builder.Services.AddDbContext<SubscriptionsDbContext>(optionsAction => {
     optionsAction.UseSqlite(builder.Configuration.GetConnectionString(name:"DbConnectionString"));
 });

@@ -16,3 +16,4 @@ public class MappingConfig
     }
 }
 
+//MappingConfig class configures mappings between different types of objects using the Mapster library. It defines mappings between Subscription objects and response objects (GetSubsResponse, GetSubByIdResponse) used in the application. This helps ensure that data can be effectively transferred and transformed between different parts of the application.

@@ -4,6 +4,8 @@ using MediatR;
 using Subhub.Contracts.Errors;
 using Subhub.Contracts.Exceptions;
 
+//behavior for validating data before it's saved to the database.
+
 namespace Subhub.Application.Behaviors;
 
 public class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>

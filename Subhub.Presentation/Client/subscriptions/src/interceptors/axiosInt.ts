@@ -1,5 +1,8 @@
 import axios, { AxiosResponse } from "axios";
 
+//sets up a global error handling mechanism for Axios requests. 
+//It logs specific error messages based on the HTTP status codes received from the server. 
+
 let isInterceptorSetup = false;
 
 export const setupErrorHandlingInterceptor = () => {

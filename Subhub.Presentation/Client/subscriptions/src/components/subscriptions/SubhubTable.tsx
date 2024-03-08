@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import PieChart from "./PieChart";
 
 export default function SubhubTable() {
+  // State declarations using useState hook
   const [subscriptions, setSubscriptions] = useState<SubDto[]>([]);
   const [totalCost, setTotalCost] = useState<number>(0);
   const [pieChartData, setPieChartData] = useState<{
@@ -14,11 +15,13 @@ export default function SubhubTable() {
     datasets: { data: number[]; backgroundColor: string[] }[];
   } | null>(null);
 
+    // useEffect hook for fetching data and calculating total cost and expense breakdown
   useEffect(() => {
     const fetchData = async () => {
       const fetchedSubscriptions = await apiConnector.getSubscriptions();
       setSubscriptions(fetchedSubscriptions);
 
+      // Filter monthly subscriptions and calculate total cost
       const monthlySubscriptions = fetchedSubscriptions.filter(
         (subscription) => subscription.period === 1
       );

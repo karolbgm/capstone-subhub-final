@@ -9,7 +9,7 @@ export default function TableItem({ subscription }: Props) {
   let background, icon;
   if (subscription.type === "Streaming") {
     background = "card l-bg-cherry";
-    icon = "fas fa-play";
+    icon = "fas fa-play fa-xs";
   } else if (subscription.type === "Membership") {
     background = "card l-bg-green-dark";
     icon = "fas fa-ticket-alt fa-xs";
